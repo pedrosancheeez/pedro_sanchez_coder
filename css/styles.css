@@ -216,17 +216,26 @@ footer{
     margin-top: 20px;
     font-size: 30px;
 }
-
+.contenedor{
+    display: grid;
+    grid-template-areas: "img parrafo"
+                        "text text";
+}
 .pFont{
+    width: 100%;
+    font-size: 25px;
     margin-top: 70px;
-    margin-inline: 200px;
+    left: 0%;
+    margin-left: 0;
     font-family: 'Roboto', sans-serif;
-    
+    grid-area: parrafo;
 }
 .pImg{
-    width: 40%;
+    width: 500px;
+    grid-area: img;
 }
 .modalidad{
+    grid-area: text;
     margin-top: 50px;
     padding: 10px;
     border-radius: 10px;    
@@ -247,14 +256,21 @@ footer{
         justify-content: space-between;
     }
 
-.modalidadText{
+.modalidadText1, .modalidadText2, .modalidadText3{
     background-color: #C7DDF0;
     border-radius: 4px;
     padding: 40px;
     margin: 9px;
 }
 
+
 @media screen and (max-width: 768px) {
+    .contenedor{
+        grid-template-areas: "img img"
+                            "parrafo parrafo"
+                            "text text"
+    }
+    
     .pFont{
         margin-top: 40px;
         margin-inline: 10px;
@@ -263,6 +279,7 @@ footer{
     }
     .pImg{
         width: auto;
+        margin: auto;
     }
     .modalidad h3{
         font-size: 20px;
