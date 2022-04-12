@@ -70,6 +70,9 @@ body main{
             left: 20px;
             position: fixed;
         }
+        .navbar-toggler{
+            margin-left: 400px;
+        }
 
 
 
