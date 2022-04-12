@@ -221,17 +221,24 @@ footer{
 }
 .contenedor{
     display: grid;
-    grid-template-areas: "img parrafo"
-                        "text text";
+    grid-template-areas: "img parrafo parrafo"
+                        "text text text"
+                        
+                        ;
 }
 .pFont{
-    width: 100%;
-    font-size: 25px;
-    margin-top: 70px;
+    
+    font-size: 18px;
+    padding: 30px;
     left: 0%;
     margin-left: 0;
     font-family: 'Roboto', sans-serif;
     grid-area: parrafo;
+}
+.pFont span{
+    font-size: 20px;
+    color: #fcecdd;
+    text-shadow: 2px 5px 4px #000000 ;
 }
 .pImg{
     width: 500px;
