@@ -4,45 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Contacto</title>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/styles.css"> <!-- Fijate que la parte de css de bootstrap va en el header y debajo va tu link de css para que se pise y priorice tu estilo.
+  los links de js van al final del body, chequealos que los deje a bajo.  -->
+   <title>Contacto</title>
 </head>
 <body>
-    <Header>
-        <nav  class="navInd navbar navbar-expand-xl" id="contacto">
-            <div class="container-fluid">
-                <a class="navImg navbar-brand" href="../index.html">
-                    <img class="img" src="../img/logo_med.png" alt="Logo de Marina Cao, Psicologa">
-                </a> 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
-                    <ul class="nav navbar-nav me-auto mb-2 mb-xl-0">
-                            <h1 class="titleInd" >Marina Cao - Consciencia emocional</h1>
-                        <li class="nav-item"><a class= "navText nav-link" href="../pages/consulta.html">
-                                Agenda tu consulta
-                            </a>
-                        </li>
-                        <li class="nav-item"><a class= "navText nav-link" href="../pages/nosotros.html">
-                                Nosotros
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class= "navText nav-link" href="#contacto">
-                                Contacto
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class= "navText nav-link" href="../pages/promos.html">
-                                <span>Enterate de nuestras</span> novedades
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <Header> <!-- Para modificar el navbar deberias borrar las clases que no te sirvan, podes cheuqearlo con el inspector del navegador y sumar clases nuevas para llamarlas en tu css y modificar con el estilo de tu proyecto -->
+        <nav class="navbar navbar-expand-lg navInd">
+            <a class="navImg" href="../index.html"><img src="../IMG/logo_med.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav nav">
+                <h1 class="titleInd" >Marina Cao - Consciencia emocional</h1>
+                <li class="nav-item active">
+                  <a class="nav-link navText" href="../pages/consulta.html">Agenda tu consulta <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="navText nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="navText nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="navText nav-link disabled" href="../pages/promos.html">Enterate de nuestras <span>novedades</span></a>
+                </li>
+              </ul>
             </div>
-        </nav>
+          </nav>
         
     </Header>
     
@@ -81,5 +73,8 @@
             </ul>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
