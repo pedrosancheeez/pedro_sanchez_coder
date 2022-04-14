@@ -316,7 +316,16 @@ footer{
     .liImg{
         margin-right: 30%;
     }
+    .titleInd{
+        display: none;
+    }
 }
+@media screen and (max-width: 900px){
+    .titleInd{
+        display: none;
+    }
+}
+
 
 /*Consulta.html*/
 .consultaP{
@@ -528,7 +537,7 @@ footer{
     margin-left: 16%;
 }
 .infoList1, .infoList2{
-    font-size: 18px;
+    font-size: 13px;
     padding: 15px;
     text-align: left;
     width: 40%;
