@@ -223,6 +223,7 @@ footer{
     display: grid;
     grid-template-areas: "img parrafo parrafo"
                         "text text text"
+                        "carousel carousel carousel"
                         
                         ;
 }
@@ -272,7 +273,12 @@ footer{
     padding: 40px;
     margin: 9px;
 }
-
+.row{
+    grid-area: carousel;
+    width: 50%;
+    margin: auto;
+    margin-top: 60px;
+}
 
 @media screen and (max-width: 768px) {
     .contenedor{
@@ -362,6 +368,7 @@ footer{
     padding: 20px;
     text-align: right;
 }
+
 @media screen and (max-width: 768px) {
     .consultaUl{
         display: block;
