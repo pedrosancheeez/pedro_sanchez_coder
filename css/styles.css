@@ -340,6 +340,18 @@ footer{
     display: flex;
     
 }
+.consultaGratis{
+    font-size: 40px;
+    font-weight: bold;
+    animation-name: mianimacion;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes mianimacion{
+    0% {transform: scale(1);}
+    50% {transform: scale(1.4);}
+    100% {transform: scale(1);}
+}
 .consultaLi{
     font-size: 20px;
     text-align: left;
@@ -348,7 +360,7 @@ footer{
     border: double 1px;
     border-radius: 4%;
     margin: 2%;
-    background-color: rgba(115, 204, 255, 0.596)
+    background-color: rgba(167, 217, 247, 0.596)
 }
 .consultaForm{
     margin-top: 150px;
@@ -376,6 +388,28 @@ footer{
 .formButton{
     padding: 20px;
     text-align: right;
+}
+.consultaSeparador{
+    margin: 80px 0px;
+}
+
+.infoConsulta{
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.75);
+}
+.infoTextCons{
+    padding-top: 20px;
+}
+.infoUl{
+    
+    display: flex;
+    padding: 60px 20px;
+}
+.infoLi{
+    list-style: none;
+    text-align: left;
+    padding: 0px 20px;
 }
 
 @media screen and (max-width: 768px) {
