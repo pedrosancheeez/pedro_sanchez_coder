@@ -360,11 +360,11 @@ footer{
     border: double 1px;
     border-radius: 4%;
     margin: 2%;
-    background-color: rgba(167, 217, 247, 0.596)
+    background-color: #C7DDF0;
 }
 .consultaForm{
     margin-top: 150px;
-    background-color: rgba(255, 255, 255, 0.335) ;
+    background-color: #C7DDF0 ;
     padding: 35px;
     margin-inline: 60px;
     
@@ -430,7 +430,7 @@ footer{
     }
     .consultaForm{
         margin-top: 20%;
-        background-color: rgba(255, 255, 255, 0.335) ;
+        background-color: #C7DDF0 ;
         padding: 25px;
     }
     .consultaForm h2{
@@ -458,6 +458,10 @@ footer{
     .liImg{
         margin-right: 30%;
     }
+    .infoUl{
+        flex-direction: column;
+        
+    }
 }
 
 /*HTML CONTACTO*/
@@ -470,7 +474,7 @@ footer{
 }
 .contactoForm{
     border-radius: 45px;
-    background-color: #778FA3;
+    background-color: #425660;
     grid-area: form;
 }
 .contactoForm Legend h3{
@@ -488,7 +492,7 @@ footer{
     margin-top: 20px;
 }
 .contactoInfo{
-    background-color: #778FA3;
+    background-color: #425660;
     padding: 5px;
     margin-inline: 80px;
     color: whitesmoke;
@@ -665,6 +669,7 @@ footer{
         margin-right: 35%;
     }
 }
+
 @media screen and (max-width: 480px) {
     .navTextInd{
         font-size: 10px;
@@ -689,7 +694,7 @@ footer{
 .promosMain{
     padding: 50px;
     margin-top: 140px;
-    background-color: rgba(115, 204, 255, 0.596);
+    background-color: #C7DDF0;
     border-radius: 15px;
 }
 .promosData{
@@ -720,6 +725,5 @@ footer{
     }
     
 }
-
 
 
