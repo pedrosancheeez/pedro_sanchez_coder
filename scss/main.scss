@@ -1,0 +1,713 @@
+//VARIABLES
+
+//Paletas de colores
+@import "../utilities/variables";
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $color-fondo;
+    main{
+        padding-top: 140px;
+        width: 85%;
+        margin: auto;
+        text-align: center;
+    }
+}
+/*barra navegacion general*/
+.titleInd{
+    font-size: 22px;
+    position: fixed;    
+    z-index: 2;    
+    padding: 6px;    
+    left: 11%;
+    background-color: whitesmoke;
+    font-style: italic;
+    overflow: hidden;}
+.navInd ul{
+    
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    left: 0px;
+    box-shadow: $sombraBox;
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 6px;
+    
+    li {
+        display: inline-block;
+        padding: 10px;
+        font-size: 14px;   
+        text-decoration: none;
+        margin-right: 1.4rem;
+                a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+                    &:hover {
+                background-color: $rosa;
+                }
+                }
+            }}
+            .navImg{
+                top: 0;
+                margin-top: 5px;
+                z-index: 3;
+                box-shadow: $sombraBox;             
+                width: 100px;
+                height: 100px;
+                left: 20px;
+                position:fixed;
+            }
+
+/*inicio barra de navegacion del INDEX*/
+.menu-fixed{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    width: 100%;
+}
+
+.titleInde{
+    font-size: 22px;
+    position: fixed;    
+    z-index: 2;    
+    padding: 6px;
+
+    left: 11%;
+    background-color: whitesmoke;
+    font-style: italic;
+    overflow: hidden;
+}
+
+
+
+
+
+    .menu ul{
+
+        background-color: whitesmoke;
+        position: fixed;
+        
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        left: 0px;
+        box-shadow: 7px 8px 12px black ;
+        overflow: hidden;
+        margin-top: 20px;
+        padding: 6px;
+        
+        
+    
+
+        li {
+            display: inline-block;
+            padding: 10px;
+            font-size: 14px;   
+            text-decoration: none;
+            margin-right: 1.4rem;
+            
+    
+        
+
+            a {
+                color: black;
+                text-decoration: none;
+                padding: 10px;
+                
+                
+            
+            &:hover {
+                background-color: #fcecdd;
+            }
+            
+        }
+    }
+}
+.navImg1{
+                
+    margin-top: 5px;
+    z-index: 3;
+    box-shadow: 7px 8px 12px black ;               
+    width: 100px;
+    height: 100px;
+    left: 20px;
+    position: fixed;
+}
+
+footer{
+    padding-top: 120px;
+    background-color: $azul-oscuro;
+    margin-top: 100px;
+    grid-area: footer;
+    width: 100%;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    bottom: 0;
+}
+.imagenFooter{
+    margin-left: 70%;
+}
+
+/*index*/
+/*Index*/
+
+.section{
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: url(../IMG/header.jpg) top center fixed;
+    background-size: cover;
+}
+.sectionBkg{
+    background: $sombraFondo;
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: baseline;
+
+}
+.sectionH1{
+    text-align: center;
+    text-shadow:  whitesmoke 1px 2px 1px;
+    margin-top: 240px;
+    font-size: 60px;
+}
+.sectionH1 span{
+    color: white;
+    text-shadow:  black 1px 2px 1px;
+}
+.sectionH2{
+    text-align: center;
+    background-color: whitesmoke;
+    border: solid $azul-oscuro 5px;
+    text-shadow:  whitesmoke 1px 1px 1px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-areas: "img parrafo parrafo"
+                        "text text text"
+                        "carousel carousel carousel"
+                        
+                        ;
+}
+.pFont{
+    
+    font-size: 18px;
+    padding: 30px;
+    left: 0%;
+    margin-left: 0;
+    font-family: $fuentePrincipal;
+    grid-area: parrafo;
+}
+.pFont span{
+    font-size: 20px;
+    color: $rosa;
+    text-shadow: 2px 5px 4px #000000 ;
+}
+.pImg{
+    width: 500px;
+    grid-area: img;
+}
+.modalidad{
+    grid-area: text;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 10px;    
+    background-color: $rosa;
+    box-shadow: 6px 5px 9px $shadow-rosa ;
+
+        h3{
+    padding-top: 10px;
+    font-size: 25px;
+    text-decoration: underline;
+        }
+        ul{   
+        margin: 30px;
+        padding: 10px;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+}
+
+.modalidadText1, .modalidadText2, .modalidadText3{
+    background-color: $azul-seccion;
+    border-radius: 4px;
+    padding: 40px;
+    margin: 9px;
+}
+.row{
+    grid-area: carousel;
+    width: 50%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+/*media querie index*/
+@media screen and (max-width: 768px) {
+    .contenedor{
+        grid-template-areas: "img img"
+                            "parrafo parrafo"
+                            "text text"
+    }
+    
+    .pFont{
+        margin-top: 40px;
+        margin-inline: 10px;
+        font-size: 19px;
+        font-family: $fuentePrincipal;       
+    }
+    .pImg{
+        width: auto;
+        margin: auto;
+    }
+    .modalidad h3{
+        font-size: 20px;
+    }
+    .modalidad ul
+    {   
+        margin: 30px;
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: space-between;
+    }
+    .imagenFooter{
+        width: 60%;
+        margin-bottom: 40px;
+    }
+    .liImg{
+        margin-right: 30%;
+    }
+    .titleInd{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px){
+    .titleInd{
+        display: none;
+    }
+}
+
+/*Consulta.html*/
+.consultaP{
+    background-color: $azul-fondo-seccion;
+    padding: 10%;
+}
+.consultaP h1 span a{
+    
+    color: black;
+}
+.consultaUl{
+    display: flex;
+    
+}
+.consultaGratis{
+    font-size: 40px;
+    font-weight: bold;
+    animation-name: mianimacion;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes mianimacion{
+    0% {transform: scale(1);}
+    50% {transform: scale(1.4);}
+    100% {transform: scale(1);}
+}
+.consultaLi{
+    font-size: 20px;
+    text-align: left;
+    padding: 2%;
+    list-style: none;
+    border: double 1px;
+    border-radius: 4%;
+    margin: 2%;
+    background-color: $azul-seccion;
+}
+.consultaForm{
+    margin-top: 150px;
+    background-color: $azul-seccion ;
+    padding: 35px;
+    margin-inline: 60px;
+    
+}
+.formTitle{
+    font-size: 25px;
+    padding: 15px;
+    margin: 30px;
+    text-align: center;
+}
+.formInput{
+    padding: 9px;
+    left: 0px;
+    font-size: 20px
+}
+.formInput input{
+    padding: 5px;
+    padding-inline: 70px;
+    margin-left: px;
+}
+.formButton{
+    padding: 20px;
+    text-align: right;
+}
+.consultaSeparador{
+    margin: 80px 0px;
+}
+
+.infoConsulta{
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.75);
+}
+.infoTextCons{
+    padding-top: 20px;
+}
+.infoUl{
+    
+    display: flex;
+    padding: 60px 20px;
+}
+.infoLi{
+    list-style: none;
+    text-align: left;
+    padding: 0px 20px;
+}
+
+/*media queries consulta*/
+
+@media screen and (max-width: 768px) {
+    .consultaUl{
+        display: block;
+        margin: 0px;
+        margin-top: 4%;
+    }
+    .consultaLi{
+        font-size: 15px;
+        margin: 0%;
+        border-radius: 0;
+        border: none;
+        
+    }
+    .consultaP{
+        font-size: 14px;
+    }
+    .consultaForm{
+        margin-top: 20%;
+        background-color: $azul-seccion ;
+        padding: 25px;
+    }
+    .consultaForm h2{
+        font-size: 19px;
+    }
+    .formTitle{
+        font-size: 1.3rem;
+        padding-top: 10px;
+        margin: 12px;
+        text-align: center;
+    }
+    .formInput{
+        padding: 2px;
+        left: 0px;
+        font-size: 14px
+    }
+    .formInput input{
+        padding: 4px;
+        padding-inline: 30px;
+    }
+    .imagenFooter{
+        width: 60%;
+        margin-bottom: 40px;
+    }
+    .liImg{
+        margin-right: 30%;
+    }
+    .infoUl{
+        flex-direction: column;
+        
+    }
+}
+
+/*HTML CONTACTO*/
+
+.contactoMain{
+    margin-top: 70px;
+}
+.contactoTitle{
+    margin-bottom: 40px;
+}
+.contactoForm{
+    border-radius: 45px;
+    background-color: $azul-oscuro;
+    grid-area: form;
+}
+.contactoForm Legend h3{
+    margin-bottom: 80px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+.listaContacto{
+    background-color:$azul-oscuro;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+.listaContacto ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.contactoInfo{
+    background-color: $azul-oscuro;
+    padding: 5px;
+    margin-inline: 80px;
+    color: whitesmoke;
+    font-style:italic;
+    left: 0px;
+    margin-bottom: 20px;
+    font-size: 20px
+
+}
+.contactoMap{
+    margin-top: 25px;
+    grid-area: map;
+}
+
+/*mediaquerie contacto*/
+
+@media screen and (max-width: 768px) {
+    .contactoTitle{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contactoMain{
+        display: grid;
+        margin-top: 38px;
+        grid-template-areas: "form map"
+                            "form map";
+    }
+    .listaContacto{
+        background-color:$azul-oscuro;
+        color: whitesmoke;
+        border-radius: 10px;
+    ul{
+        list-style: none;
+        margin-top: 20px;
+    }}
+    .contactoMap{
+        margin-left: 20px;
+        margin-top: 300px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/*html nosotros*/
+
+.nosotrosMain{    
+    margin-top: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-areas:"title title title"
+                        "img img info"
+                        "footer footer footer";
+}
+.nosotrosTop{
+    margin-inline: 120px;
+    padding: 10px;
+    grid-area: title;
+    margin-top: 90px;
+    background-color: whitesmoke;
+    border-radius: 40px;
+    border: double 1px;
+    margin-bottom: 5rem;
+}
+.nosotrosImg{
+    margin-top: 1rem;
+    width: 100%;
+    border: $azul-oscuro 1px double;
+    grid-area: img;
+    margin-left: 2rem;
+}
+.nosotrosInfo{
+    font-size: 25px;
+    margin-top: 20px;
+    
+}
+.infoPadre{
+    display: flex;
+    margin-top: 0px;
+    height: auto;
+    margin-left: 16%;
+}
+.infoList1, .infoList2{
+    font-size: 13px;
+    padding: 15px;
+    text-align: left;
+    width: 40%;
+    list-style: none;
+    margin: 10px;
+    background-color: $azul-seccion;
+    border-radius: 15px;   
+    margin-bottom: 70px; 
+    grid-area: info;
+}
+
+/*mediaqueries nosotros*/
+
+@media screen and (max-width: 768px) {
+    .titleInd{
+        display: none;
+    }
+    .titleInde{
+        display: none;
+    }
+    .navImg1{
+        width: 70px;
+        height: 70px;
+        margin-top: 6px;
+    }
+    .navImg{
+        width: 70px;
+        height: 70px;
+        margin-top: 6px;
+    }
+    .img{
+        width: 70px;
+        margin-top: 0px;
+    }
+    header nav .menu{
+        padding-right:1.5%;
+        
+    }
+    .navTextInd{
+        font-size: 14px;
+        margin: 0px;
+        padding-block: 9px;
+        padding-inline: 1px;
+        
+    }
+    .navTextInd span {
+        display: none;
+    }
+    .menu ul li{
+        font-size: 8px;
+        margin: 0px;
+        padding-block: 9px;
+        padding-inline: 1px;
+        
+    }
+
+    .navText span {
+        display: none;
+    }
+    .nosotrosMain{    
+        margin-top: 140px;
+        text-align: center;
+        display: grid;
+        grid-template-areas:"title title title"
+                            "img img img"
+                            "info info info"
+                            "footer footer footer";
+    }
+    .nosotrosTop{
+        margin-top: 0;
+        font-size: 12px;
+    }
+    .nosotrosImg{
+        margin-left: 11%;
+        width: 75%;    
+    }
+    .infoList1, .infoList2{
+        font-size: 14px;
+        width: 100%;
+
+    }
+    .infoPadre{
+        display: block;
+        width: 100%;        
+    }
+    .redes{
+        margin-left: 9%;
+    }
+    .imagenFooter{
+        width: 60%;
+        margin-bottom: 40px;
+    }
+    .liImg{
+        margin-right: 35%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .navTextInd{
+        font-size: 10px;
+        margin: 0px;
+        padding-block: 9px;
+        padding-inline: 1px;
+        
+    }
+    .navTextInd span {
+        display: none;
+    }
+    .navInd ul li{
+        font-size: 10px;
+        margin: 0px;
+        padding-block: 9px;
+        padding-inline: 1px;
+        
+    }
+}
+
+/*HTML PROMOS*/
+.promosMain{
+    padding: 50px;
+    margin-top: 140px;
+    background-color: $azul-seccion;
+    border-radius: 15px;
+}
+.promosData{
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 7px;
+    text-align: left;
+    margin-left: 40px;
+}
+.promosInput{
+    padding-inline: 30px;
+    margin-left: 20px;
+}
+@media screen and (max-width: 768px) {
+    .promosMain h1{
+        font-size: 20px;
+    }
+    .promoForm{
+        padding: 8px;
+        
+    }
+    .promosMain{
+        padding: 20px;
+    }
+    .promosData{
+        font-size: 16px;
+        left: 0%;
+    }
+    
+}
