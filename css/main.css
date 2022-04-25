@@ -59,11 +59,16 @@ body {
 
 /*inicio barra de navegacion del INDEX*/
 .menu-fixed {
+    animation-name: aparecer;
+    animation-duration: 1s;
   position: fixed;
   z-index: 99;
   top: 0;
   width: 100%; }
-
+@keyframes aparecer {
+    0%{ opacity: 0;}
+    100%{opacity: 1;}
+}
 .titleInde {
   font-size: 22px;
   position: fixed;
@@ -162,7 +167,9 @@ footer {
 
 .contenedor {
   display: grid;
-  grid-template-areas: "img parrafo parrafo" "text text text" "carousel carousel carousel"; }
+  grid-template-areas: "img parrafo parrafo"
+ "text text text"
+ "carousel carousel carousel"; }
 
 .pFont {
   font-size: 18px;
@@ -214,7 +221,9 @@ footer {
 /*media querie index*/
 @media screen and (max-width: 768px) {
   .contenedor {
-    grid-template-areas: "img img" "parrafo parrafo" "text text"; }
+    grid-template-areas: "img img"
+ "parrafo parrafo"
+ "text text"; }
   .pFont {
     margin-top: 40px;
     margin-inline: 10px;
@@ -413,7 +422,8 @@ footer {
   .contactoMain {
     display: grid;
     margin-top: 38px;
-    grid-template-areas: "form map" "form map"; }
+    grid-template-areas: "form map"
+ "form map"; }
   .listaContacto {
     background-color: #425660;
     color: whitesmoke;
@@ -432,7 +442,9 @@ footer {
   margin-top: 50px;
   text-align: center;
   display: grid;
-  grid-template-areas: "title title title" "img img info" "footer footer footer"; }
+  grid-template-areas: "title title title"
+ "img img info"
+ "footer footer footer"; }
 
 .nosotrosTop {
   margin-inline: 120px;
@@ -510,7 +522,10 @@ footer {
     margin-top: 140px;
     text-align: center;
     display: grid;
-    grid-template-areas: "title title title" "img img img" "info info info" "footer footer footer"; }
+    grid-template-areas: "title title title"
+ "img img img"
+ "info info info"
+ "footer footer footer"; }
   .nosotrosTop {
     margin-top: 0;
     font-size: 12px; }
