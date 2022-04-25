@@ -2,12 +2,19 @@
 
 //Paletas de colores
 @import "../utilities/variables";
-
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
 html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: $color-fondo;
+    background-color: map-get($colors , color-fondo );
     main{
         padding-top: 140px;
         width: 85%;
@@ -31,8 +38,7 @@ body{
     position: fixed;
     top: 0;
     z-index: 1;
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
     justify-content: flex-end;
     width: 100%;
     left: 0px;
@@ -52,7 +58,7 @@ body{
             text-decoration: none;
             padding: 10px;
                     &:hover {
-                background-color: $rosa;
+                background-color: map-get($colors , rosa );
                 }
                 }
             }}
@@ -97,8 +103,7 @@ body{
         position: fixed;
         
         z-index: 1;
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         justify-content: flex-end;
         width: 100%;
         left: 0px;
@@ -128,7 +133,7 @@ body{
                 
             
             &:hover {
-                background-color: #fcecdd;
+                background-color: map-get($colors , rosa );
             }
             
         }
@@ -147,14 +152,13 @@ body{
 
 footer{
     padding-top: 120px;
-    background-color: $azul-oscuro;
+    background-color: map-get($colors , azul-oscuro );;
     margin-top: 100px;
     grid-area: footer;
     width: 100%;
 }
 .redes{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     padding-bottom: 50px;
     bottom: 0;
 }
@@ -194,7 +198,7 @@ footer{
 .sectionH2{
     text-align: center;
     background-color: whitesmoke;
-    border: solid $azul-oscuro 5px;
+    border: solid map-get($colors , azul-oscuro ) 5px;
     text-shadow:  whitesmoke 1px 1px 1px;
     margin-top: 20px;
     font-size: 30px;
@@ -219,7 +223,7 @@ footer{
 }
 .pFont span{
     font-size: 20px;
-    color: $rosa;
+    color: map-get($colors , rosa );
     text-shadow: 2px 5px 4px #000000 ;
 }
 .pImg{
@@ -231,8 +235,8 @@ footer{
     margin-top: 50px;
     padding: 10px;
     border-radius: 10px;    
-    background-color: $rosa;
-    box-shadow: 6px 5px 9px $shadow-rosa ;
+    background-color: map-get($colors , rosa );;
+    box-shadow: 6px 5px 9px map-get($colors , shadow-rosa ); ;
 
         h3{
     padding-top: 10px;
@@ -249,7 +253,7 @@ footer{
 }
 
 .modalidadText1, .modalidadText2, .modalidadText3{
-    background-color: $azul-seccion;
+    background-color: map-get($colors , azul-seccion );;
     border-radius: 4px;
     padding: 40px;
     margin: 9px;
@@ -286,8 +290,7 @@ footer{
     {   
         margin: 30px;
         padding: 4px;
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         list-style: none;
         justify-content: space-between;
     }
@@ -310,7 +313,7 @@ footer{
 
 /*Consulta.html*/
 .consultaP{
-    background-color: $azul-fondo-seccion;
+    background-color: map-get($colors , azul-fondo-seccion );;
     padding: 10%;
 }
 .consultaP h1 span a{
@@ -341,11 +344,11 @@ footer{
     border: double 1px;
     border-radius: 4%;
     margin: 2%;
-    background-color: $azul-seccion;
+    background-color: map-get($colors , azul-seccion );;
 }
 .consultaForm{
     margin-top: 150px;
-    background-color: $azul-seccion ;
+    background-color: map-get($colors , azul-seccion ); ;
     padding: 35px;
     margin-inline: 60px;
     
@@ -413,7 +416,7 @@ footer{
     }
     .consultaForm{
         margin-top: 20%;
-        background-color: $azul-seccion ;
+        background-color: map-get($colors , azul-seccion ); ;
         padding: 25px;
     }
     .consultaForm h2{
@@ -442,7 +445,7 @@ footer{
         margin-right: 30%;
     }
     .infoUl{
-        flex-direction: column;
+        @include flex-column;
         
     }
 }
@@ -457,7 +460,7 @@ footer{
 }
 .contactoForm{
     border-radius: 45px;
-    background-color: $azul-oscuro;
+    background-color: map-get($colors , azul-oscuro );
     grid-area: form;
 }
 .contactoForm Legend h3{
@@ -466,7 +469,7 @@ footer{
     text-decoration: underline;
 }
 .listaContacto{
-    background-color:$azul-oscuro;
+    background-color:map-get($colors , azul-oscuro );
     color: whitesmoke;
     border-radius: 10px;
 }
@@ -475,7 +478,7 @@ footer{
     margin-top: 20px;
 }
 .contactoInfo{
-    background-color: $azul-oscuro;
+    background-color: map-get($colors , azul-oscuro );
     padding: 5px;
     margin-inline: 80px;
     color: whitesmoke;
@@ -505,7 +508,7 @@ footer{
                             "form map";
     }
     .listaContacto{
-        background-color:$azul-oscuro;
+        background-color:map-get($colors , azul-oscuro );
         color: whitesmoke;
         border-radius: 10px;
     ul{
@@ -565,7 +568,7 @@ footer{
     width: 40%;
     list-style: none;
     margin: 10px;
-    background-color: $azul-seccion;
+    background-color: map-get($colors , azul-seccion );
     border-radius: 15px;   
     margin-bottom: 70px; 
     grid-area: info;
@@ -680,7 +683,7 @@ footer{
 .promosMain{
     padding: 50px;
     margin-top: 140px;
-    background-color: $azul-seccion;
+    background-color: map-get($colors , azul-seccion );
     border-radius: 15px;
 }
 .promosData{
