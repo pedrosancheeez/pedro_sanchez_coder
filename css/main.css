@@ -20,7 +20,7 @@ body {
   font-style: italic;
   overflow: hidden; }
 
-.navInd ul {
+.navUl {
   background-color: whitesmoke;
   position: fixed;
   top: 0;
@@ -34,17 +34,17 @@ body {
   overflow: hidden;
   margin-top: 20px;
   padding: 6px; }
-  .navInd ul li {
+  .navLi {
     display: inline-block;
     padding: 10px;
     font-size: 14px;
     text-decoration: none;
     margin-right: 1.4rem; }
-    .navInd ul li a {
+    .navA {
       color: black;
       text-decoration: none;
       padding: 10px; }
-      .navInd ul li a:hover {
+      .navA:hover {
         background-color: #fcecdd; }
 
 .navImg {
@@ -127,8 +127,7 @@ footer {
   padding-bottom: 50px;
   bottom: 0; }
 
-.imagenFooter {
-  margin-left: 70%; }
+
 
 /*index*/
 /*Index*/
@@ -533,7 +532,7 @@ footer {
     margin-left: 11%;
     width: 75%; }
   .infoList1, .infoList2 {
-    font-size: 14px;
+    font-size: 12px;
     width: 100%; }
   .infoPadre {
     display: block;
@@ -545,6 +544,18 @@ footer {
     margin-bottom: 40px; }
   .liImg {
     margin-right: 35%; } }
+@media screen and (max-width: 1100px) {
+  .nosotrosMain{
+    grid-template-areas: "title title title"
+  "img img img"
+  "info info info"
+ "footer footer footer"}
+ .nosotrosImg{
+  width: 80%;
+  align-items: center;
+}
+  
+}
 
 @media screen and (max-width: 480px) {
   .navTextInd {
@@ -554,7 +565,7 @@ footer {
     padding-inline: 1px; }
   .navTextInd span {
     display: none; }
-  .navInd ul li {
+  .navLi {
     font-size: 10px;
     margin: 0px;
     padding-block: 9px;
@@ -588,3 +599,31 @@ footer {
   .promosData {
     font-size: 16px;
     left: 0%; } }
+
+
+    @media screen and (max-width: 991px){
+      .navImg{
+          left: 80%;
+          position:absolute;
+      }
+      .navUl{
+          flex-direction: column;
+          top: 30px;
+      }
+      .navLi{
+          text-align: center;
+      }
+  }
+  @media screen and (max-width: 768px) {
+      .navImg{
+          left: 70%;
+      }
+  }
+  @media screen and (max-width: 1100px) {
+      .titleInd{       
+          display: none;
+      }
+      .titleInde{
+        display: none;
+      }
+  }
