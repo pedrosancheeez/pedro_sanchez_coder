@@ -1,0 +1,287 @@
+/* mediaquerie nav */
+
+@media screen and (max-width:768px) {
+    .titleInd{
+        display: none;
+    }
+    .titleInde{
+        display: none;
+    }
+    .navImg1{
+        width: 70px;
+        height: 70px;
+        margin-top: 6px;
+    }
+    .navImg{
+        width: 70px;
+        height: 70px;
+        margin-top: 6px;
+    }
+    .img{
+        width: 70px;
+        margin-top: 0px;
+    }
+    header nav .menu{
+        padding-right:1.5%;
+        
+    }
+    .navTextInd{
+        font-size: 14px;
+        margin: 0px;
+        padding-block: 9px;
+        padding-inline: 1px;
+        
+    }
+    .navTextInd span {
+        display: none;
+    }
+    .menu ul li{
+        font-size: 8px;
+        margin: 0px;
+        padding-block: 9px;
+        padding-inline: 1px;
+        
+    }
+
+    .navText span {
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .navTextInd{
+        font-size: 10px;
+        margin: 0px;
+        padding-block: 9px;
+        padding-inline: 1px;
+        
+    }
+    .navTextInd span {
+        display: none;
+    }
+    .navLi{
+        font-size: 10px;
+        margin: 0px;
+        padding-block: 9px;
+        padding-inline: 1px;
+        
+    }
+}
+
+@media screen and (max-width: 991px){
+    .navImg{
+        left: 80%;
+        position:absolute;
+    }
+    .navUl{
+        flex-direction: column;
+        top: 30px;
+    }
+    .navLi{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .navImg{
+        left: 70%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .titleInd{       
+        display: none;
+    }
+    .titleInde{
+    display: none;
+    }
+}
+
+/*mediaquerie index*/
+@media screen and (max-width: 768px) {
+    .contenedor{
+        grid-template-areas: "img img"
+                            "parrafo parrafo"
+                            "text text"
+    }
+    
+    .pFont{
+        margin-top: 40px;
+        margin-inline: 10px;
+        font-size: 19px;
+        font-family: $fuentePrincipal;       
+    }
+    .pImg{
+        width: auto;
+        margin: auto;
+    }
+    .modalidad h3{
+        font-size: 20px;
+    }
+    .modalidad ul
+    {   
+        margin: 30px;
+        padding: 4px;
+        @include flex-column;
+        list-style: none;
+        justify-content: space-between;
+    }
+    .imagenFooter{
+        width: 60%;
+        margin-bottom: 40px;
+    }
+    .liImg{
+        margin-right: 30%;
+    }
+    .titleInd{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px){
+    .titleInd{
+        display: none;
+    }
+}
+/*mediaquerie consulta*/
+
+@media screen and (max-width: 768px) {
+    .consultaUl{
+        display: block;
+        margin: 0px;
+        margin-top: 4%;
+    }
+    .consultaLi{
+        font-size: 15px;
+        margin: 0%;
+        border-radius: 0;
+        border: none;
+        
+    }
+    .consultaP{
+        font-size: 14px;
+    }
+    .consultaForm{
+        margin-top: 20%;
+        background-color: map-get($colors , azul-seccion ); ;
+        padding: 25px;
+    }
+    .consultaForm h2{
+        font-size: 19px;
+    }
+    .formTitle{
+        font-size: 1.3rem;
+        padding-top: 10px;
+        margin: 12px;
+        text-align: center;
+    }
+    .formInput{
+        padding: 2px;
+        left: 0px;
+        font-size: 14px
+    }
+    .formInput input{
+        padding: 4px;
+        padding-inline: 30px;
+    }
+    .imagenFooter{
+        width: 60%;
+        margin-bottom: 40px;
+    }
+    .liImg{
+        margin-right: 30%;
+    }
+    .infoUl{
+        @include flex-column;
+        
+    }
+}
+
+/*media querie contacto*/
+
+@media screen and (max-width: 768px) {
+    .contactoTitle{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contactoMain{
+        display: grid;
+        margin-top: 38px;
+        grid-template-areas: "form map"
+                            "form map";
+    }
+    .listaContacto{
+        background-color:map-get($colors , azul-oscuro );
+        color: whitesmoke;
+        border-radius: 10px;
+    ul{
+        list-style: none;
+        margin-top: 20px;
+    }}
+    .contactoMap{
+        margin-left: 20px;
+        margin-top: 300px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/*media querie nosotros*/
+
+@media screen and (max-width: 768px) {
+    .nosotrosMain{    
+        margin-top: 140px;
+        text-align: center;
+        display: grid;
+        grid-template-areas:"title title title"
+                            "img img img"
+                            "info info info"
+                            "footer footer footer";
+    }
+    .nosotrosTop{
+        margin-top: 0;
+        font-size: 12px;
+    }
+    .nosotrosImg{
+        margin-left: 11%;
+        width: 75%;    
+    }
+    .infoList1, .infoList2{
+        font-size: 14px;
+        width: 100%;
+
+    }
+    .infoPadre{
+        display: block;
+        width: 100%;        
+    }
+    .redes{
+        margin-left: 9%;
+    }
+    .imagenFooter{
+        width: 60%;
+        margin-bottom: 40px;
+    }
+    .liImg{
+        margin-right: 35%;
+    }
+}
+
+
+/*mediaquerie promos*/
+
+@media screen and (max-width: 768px) {
+    .promosMain h1{
+        font-size: 20px;
+    }
+    .promoForm{
+        padding: 8px;
+        
+    }
+    .promosMain{
+        padding: 20px;
+    }
+    .promosData{
+        font-size: 16px;
+        left: 0%;
+    }
+    
+}

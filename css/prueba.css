@@ -1,0 +1,175 @@
+html {
+    scroll-behavior: smooth; }
+  
+  body {
+    background-color: #b7ccdd; }
+    body main {
+      padding-top: 140px;
+      width: 85%;
+      margin: auto;
+      text-align: center; }
+  
+  /*barra navegacion general*/
+  .titleInd {
+    font-size: 22px;
+    position: fixed;
+    z-index: 2;
+    padding: 6px;
+    left: 11%;
+    background-color: whitesmoke;
+    font-style: italic;
+    overflow: hidden; }
+  
+  .navUl {
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    left: 0px;
+    box-shadow: 7px 8px 12px black;
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 6px; }
+    .navLi {
+      display: inline-block;
+      padding: 10px;
+      font-size: 14px;
+      text-decoration: none;
+      margin-right: 1.4rem; }
+      .navA {
+        color: black;
+        text-decoration: none;
+        padding: 10px; }
+        .navA:hover {
+          background-color: #fcecdd; }
+  
+  .navImg {
+    top: 0;
+    margin-top: 5px;
+    z-index: 3;
+    box-shadow: 7px 8px 12px black;
+    width: 100px;
+    height: 100px;
+    left: 20px;
+    position: fixed; } 
+  footer {
+    padding-top: 120px;
+    background-color: #425660;
+    margin-top: 100px;
+    grid-area: footer;
+    width: 100%; }
+  
+  .redes {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    bottom: 0; }
+  
+
+
+  /*HTML CONTACTO*/
+  .contactoMain {
+    margin-top: 70px; }
+  
+  .contactoTitle {
+    margin-bottom: 40px; }
+  
+  .contactoForm {
+    border-radius: 45px;
+    background-color: #425660;
+    grid-area: form; }
+  
+  .contactoForm Legend h3 {
+    margin-bottom: 80px;
+    font-size: 25px;
+    text-decoration: underline; }
+  
+  .listaContacto {
+    background-color: #425660;
+    color: whitesmoke;
+    border-radius: 10px; }
+  
+  .listaContacto ul {
+    list-style: none;
+    margin-top: 20px; }
+  
+  .contactoInfo {
+    background-color: #425660;
+    padding: 5px;
+    margin-inline: 10%;
+    color: whitesmoke;
+    font-style: italic;
+    left: 0px;
+    margin-bottom: 20px;
+    font-size: 20px; }
+  
+  .contactoMap {
+    margin-top: 25px;
+    grid-area: map; }
+  
+  /*mediaquerie contacto*/
+  @media screen and (max-width: 768px) {
+    .contactoTitle {
+      width: 100%;
+      text-align: center; }
+    .contactoMain {
+      display: grid;
+      margin-top: 38px;
+      grid-template-areas: "form map"
+   "form map"; }
+    .listaContacto {
+      background-color: #425660;
+      color: whitesmoke;
+      border-radius: 10px; }
+      .listaContacto ul {
+        list-style: none;
+        margin-top: 20px; }
+    .contactoMap {
+      margin-left: 20px;
+      margin-top: 300px;
+      width: 150px;
+      height: 150px; } }
+ 
+  @media screen and (max-width: 480px) {
+    .navTextInd {
+      font-size: 10px;
+      margin: 0px;
+      padding-block: 9px;
+      padding-inline: 1px; }
+    .navTextInd span {
+      display: none; }
+    .navLi {
+      font-size: 10px;
+      margin: 0px;
+      padding-block: 9px;
+      padding-inline: 1px; } }
+
+/*media querie index*/
+@media screen and (max-width: 991px){
+    .navImg{
+        left: 80%;
+        position:absolute;
+    }
+    .navUl{
+        flex-direction: column;
+        top: 30px;
+    }
+    .navLi{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .navImg{
+        left: 70%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .titleInd{       
+        display: none;
+    }
+    
+}
